@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+           margin: 0px;
+           padding: 0px;  
+        }
+        .nav_section {
+            background: url(templates/Header_background.png);
+            background-repeat: no-repeat;
+            height: 25vh;
+            width: 100%;
+            padding-top: 10vh;
+        }
+        .logo{
+            height: 25vh;
+            width: 50%;
+        }
+        .logo img{
+            padding-left: 75px;
+            height: 15vh;
+        }
+        .background {
+            background: url(templates/Boxes_and_furniture_background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 130vh;
+            width: 100%;
+            }
+        .box-main {
+            display: flex;
+            width: 828px;
+            height: 130vh;
+            background: url(templates/Blue_shape_top.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .firsthalf{
+            padding-top: 27vh;
+            padding-left: 13vh;
+        }
+        .text-big{
+            font-family: system-ui;
+            font-size: 31px;
+            font-weight: 300;
+            color: white;
+            letter-spacing: 0.1rem;
+        }
+        .secondsecton {
+            margin-top: 50px;
+        }
+        .box-main2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .step1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 10%;
+        }
+        .stepImg{
+            display: flex;
+            justify-content: center;
+        }
+        .stepImg img {
+            height: 27vh;
+        }
+        .step2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .stepImg2{
+            display: flex;
+            justify-content: center;
+        }
+        .stepImg2 img {
+            height: 21vh;
+        }
+        .text-big-color{
+            text-align: center;
+            font-family: system-ui;
+            font-weight: 300;
+            font-size: 31px;
+            color: darkslateblue;
+        }
+        .text-big2{
+            font-family: system-ui;
+            font-size: 25px;
+            font-weight: 300;
+            color: black;
+            /* letter-spacing: 0.1rem; */
+            text-align: center;
+            padding-top: 30px;
+        }
+        .topDown{
+            padding-top: 19px;
+        }
+        .btn2 {
+            font-family: 'SST', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            background-color: rgba(0, 60, 255, 0.8);
+            border: none;
+            border-radius: 4px;
+            transition: all 0.3s ease 0s;
+            padding: 10px 25px 10px 25px;
+            cursor: pointer;
+        }
+        .textbig3{
+            font-family: system-ui;
+            font-size: 28px;
+            font-weight: 300;
+            color: black;        
+        }
+        .thirdBackground{
+            background-color: rgba(230, 227, 227, 0.589);
+            height: 82vh;
+        }
+        .playstationimg{
+            height: 70vh;
+            width: 83vh;
+        }
+        .playstationimg img{
+            width: 104.5vh;
+        }
+        .main-p {
+            padding-right: 23vh;
+            padding-top: 60px;
+        }
+        .button-4{
+            padding-top: 25px;
+        }
+        .fourthBackground{
+            background-color: rgba(230, 227, 227, 0.589);
+            height: 86.5vh;
+        }
+        .playstationimg2{
+            height: 70vh;
+            width: 129vh;
+        }
+        .playstationimg2 img{
+            width: 110.5vh;
+        }
+        .main-p2{
+            padding-right: 23vh;
+            padding-top: 60px;
+        }
+        .f-background {
+            margin-top: 0px;
+        }
+        .graphsec{
+            margin-top: 70px;
+        }
+        .graphpara{
+            font-family: system-ui;
+            font-size: 30px;
+            font-weight: 400;
+            color: #000000b5;
+        }
+        .main-p3{
+            padding: 0px 50px 30px 140px;
+        }
+        .allData{
+            display: flex;
+            padding-bottom: 25px;
+        }
+        .percent{
+            font-family: system-ui;
+            font-weight: 700;
+            font-size: 50px;
+            color: #00008be0;
+        }
+        .innerdata{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: system-ui;
+            font-size: 22px;
+            font-weight: 400;
+            color: #000000b5;
+            padding: 0px 80px 0px 20px;
+        }
+        .data{
+            margin: 20px 20px 0px 140px;
+        }
+        .staff img{
+            width: 100%;
+            margin-top: 30px;
+        }
+        .maxHistory{
+            padding: 30px 50px;
+            background-color: rgba(230, 227, 227, 0.589);
+        }
+        .years{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .maxHistoryspan{
+            font-family: system-ui;
+            font-size: 43px;
+            font-weight: 700;
+            color: #000000b5;
+            margin-left: 80px;
+        }
+        .textstyle{
+            font-family: system-ui;
+            font-size: 20px;
+            font-weight: 400;
+            color: #000000b5;
+            letter-spacing: 0.1rem;
+        }
+        .spanYear{
+            color: #00008be0;
+            font-size: 30px;
+        }
+        .Y2010{
+            width: 60vh;
+            margin-top: 55px;
+        }
+        .Y2015{
+            width: 60vh;
+        }
+        .bg{
+            background: url("templates/Blue_shape_bottom.png");
+            width: 100%;
+            height: 70vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .fstyle{
+            font-family: system-ui;
+            font-size: 20px;
+            font-weight: 400;
+            color: whitesmoke;
+            margin-left: 130px;
+            letter-spacing: 0.1rem;
+        }
+        .fstyle a{
+            color: whitesmoke;
+        }
+        .contactpara{
+            font-size: 50px;
+            font-weight: 700;
+            padding: 50px 0px 0px 130px;
+            color: whitesmoke;
+            font-family: system-ui;
+            letter-spacing: -1px;
+        }
+        .flogo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 10px;
+        }
+        .handler{
+            padding-right: 30px;
+        }
+        .footertext{
+            font-family: system-ui;
+            font-size: 20px;
+            font-weight: 400;
+            color: #000000b5;
+            letter-spacing: 0.1rem;
+            text-align: center;
+        }
+        .pu-span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 20px 50px 20px;
+        }
+        .pu-span span a{
+            color: #000000b5;;
+        }
+
+
+        @media only screen and (max-width: 1320px){
+            .nav_section{
+                width: 175vh;
+            }
+            .background{
+                width: 175vh;
+            }
+            .box-main2{
+                flex-direction: column;
+                width: 175vh;
+            }
+            .step1{
+                margin: 0px;
+                width: max-content;
+            }
+            .topDown{
+                padding-top: 10vh;
+            }
+            .thirdBackground{
+                width: 175vh;    
+                height: 71vh;
+            }
+            .box-res{
+                flex-direction: unset;
+            }
+            .main-p{
+                padding-right: 10vh;
+                padding-top: 0vh;
+            }
+            .fourthBackground{
+                width: 175vh;
+            }
+            .textbig3{
+                width: max-content;
+            }
+            .box-res2{
+                width: 173vh;
+            }
+            .main-p2{
+                padding-right: 0px;
+                padding-top: 0px;
+                margin-right: 23vh;
+            }
+            .playstationimg img{
+                width: 91vh;
+            }
+            .playstationimg2 img{
+                width: 91vh;
+                margin-right: 10vh;
+            }
+            .main-p3{
+                padding: 0px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 175vh;
+                padding-bottom: 10vh;
+            }
+            .data{
+                margin: 10vh 12vh;
+            }
+            .staff{
+                width: 175vh;
+            }
+            .maxHistory{
+                width: 175vh;
+                padding: 0px;
+                padding-top: 10vh;
+            }
+            .maxHistoryspan{
+                margin: 0px;
+                display: block;
+                text-align: center;
+            }
+            .years{
+                flex-direction: column;
+            }
+            .Y2022{
+                margin-right: 5vh;
+            }
+            .textstyle{
+                padding-bottom: 10vh;
+            }
+            .contact{
+                width: 175vh;
+            }
+            .foot{
+                width: 175vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav_section">
+        <div class="logo"><img src="templates/Logotype.png" alt="logo"></div>
+    </nav>
+    <section class="background firstsecton">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big"><b>MaxSold</b> solves a common<br> problem: what do you do with<br> all the stuff when your client<br>
+                    is downsizing, decluttering<br> or liquidating an estate?<br><br> <b>MaxSold</b> has a long-standing<br>
+                    track record of supporting<br> move managers and<br> professional organizers in<br>
+                    fulfilling the goals of their<br> clients. How does it work?</p>
+            </div>
+        </div>
+    </section>
+    <section class="secondsecton">
+        <div class="box-main2">
+            <div class="step1">
+            <div class="stepImg"><img src="templates/Icon_catalogue.png" alt="logo"></div>
+            <p class="text-big-color"><b>Step 1. Photograph<br> and catalogue items</b></p>
+            <p class="text-big2">You can do this yourself or with<br> your client using our app or you can<br>
+                hire our MaxSold teams to facilitate<br> the process of lotting, photographs<br>
+                and cataloguing.</p>
+        </div>
+        <div class="step2">
+            <div class="topDown">
+            <div class="stepImg2"><img src="templates/Icon_auction.png" alt="logo"></div>
+            <br>
+            <p class="text-big-color"><b>Step 2. The auction<br>goes live</b></p>
+            <p class="text-big2">While keeping the address private,<br>
+                we market your auction to our pre-<br>registered bidders and place targeted<br>
+                ads on social media to potential<br>buyers in your area.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="secondsecton">
+        <div class="box-main2">
+            <div class="step1">
+            <div class="stepImg"><img src="templates/Icon_pickup-truck.png" alt="logo"></div>
+            <p class="text-big-color"><b>Step 3. Pick-up Day</b></p>
+            <p class="text-big2">With scheduled appointments for<br>
+                collecting items, pick-up day runs<br>smoothly and at the end, 96% of<br>
+                items are cleared from the premises.</p>
+        </div>
+        <div class="step2">
+            <div class="topDown">
+            <div class="stepImg2"><img src="templates/Icon_call.png" alt="logo"></div>
+            <br>
+            <p class="text-big-color"><b>What Happens Next?</b></p>
+            <p class="text-big2">A representative from MaxSold will be<br>
+                contacting you by phone today! If you<br>miss the call or would like to call a<br>
+                representative yourself, please call:</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="secondsecton thirdBackground">
+        <div class="box-main2 box-res">
+            <div class="main-p">
+                <p class="textbig3"><b>The MaxSold method..</b><br><br>MaxSold Managed<br>
+                    Duis ultrices massa iaculis, faucibus<br>
+                    urna et, pulvinar nulla. In fringilla<br>
+                    neque ultrices rutrum vehicula.</p>
+                <div class="button-4">
+                    <button class="btn2">Learn more</button>
+                </div>
+            </div>
+            <div class="playstationimg">
+                <img src="templates/Sample_photo_1.png" alt="logo">
+            </div>
+        </div>
+    </section>
+    <section class="fourthBackground thirdBackground">
+        <div class="box-main2 box-res box-res2">
+            <div class="playstationimg2">
+                <img src="templates/Sample_photo_2.png" alt="logo">
+            </div>
+            <div class="main-p2">
+                <p class="textbig3"><b>MaxSold Seller Managed</b><br><br>Duis ultrices massa iaculis faucibus
+                    <br>urna et, pulvinar nulla. In fringilla<br>
+                    neque ultrices rutrum vehicula.</p>
+                <div class="button-4">
+                    <button class="btn2">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secondsecton thirdBackground f-background">
+        <div class="box-main2 box-res">
+            <div class="main-p">
+                <p class="textbig3"><b>MaxSold Hybrid</b><br><br>MaxSold Managed<br>
+                    Duis ultrices massa iaculis, faucibus<br>
+                    urna et, pulvinar nulla. In fringilla<br>
+                    neque ultrices rutrum vehicula.</p>
+                <div class="button-4">
+                    <button class="btn2">Learn more</button>
+                </div>
+            </div>
+            <div class="playstationimg">
+                <img src="templates/Sample_photo_3.png" alt="logo">
+            </div>
+        </div>
+    </section>
+    <section class="graphsec">
+        <div class="graph-main2">
+            <div class="main-p3">
+                <p class="graphpara"><b>MaxSold By The Numbers</b><br><br>
+                    Duis ultrices massa iaculis, faucibus urna et, pulvinar nulla. In fringilla neque ultrices<br>
+                    rutrum vehicula.spent on. Curabitur pretium vitae dui a sodales.
+                </p>
+            </div>
+            <div class="data">
+                <div class="allData">
+                    <span class="percent">92%</span>
+                    <span class="innerdata">Vivamus consequat<br>mauris non</span>
+                    <span><img src="templates/Statsbar_1.png"></span>
+                </div>
+                <div class="allData">
+                    <span class="percent">81%</span>
+                    <span class="innerdata">Vivamus consequat<br>mauris non</span>
+                    <span><img src="templates/Statsbar_2.png"></span>
+                </div>
+                <div class="allData">
+                    <span class="percent">33%</span>
+                    <span class="innerdata">Vivamus consequat<br>mauris non</span>
+                    <span><img src="templates/Statsbar_4.png"></span>
+                </div>
+                <div class="allData">
+                    <span class="percent">64%</span>
+                    <span class="innerdata">Vivamus consequat<br>mauris non</span>
+                    <span><img src="templates/Statsbar_5.png"></span>
+                </div>
+                <div class="allData">
+                    <span class="percent">46%</span>
+                    <span class="innerdata">Vivamus consequat<br>mauris non</span>
+                    <span><img src="templates/Statsbar_3.png"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="staff">
+        <img src="templates/MaxSold_staff.png" alt="">
+        </div>
+    </section>
+    <section class="maxHistory">
+        <span class="maxHistoryspan">MaxSold History</span>
+        <div class="years">
+            <div class="Y2010">
+            
+            <span class="spanYear textstyle"><b>2010</b></span>
+            <br><br>
+            <span class="spanUnderline"><img src="templates/HR line.png" alt=""></span>
+            <br><br>
+            <p class="historypara textstyle">MaxSold was founded in<br>2010 by Barry who n is a<br>
+                veteran auctioneer and<br>appraiser, and the only<br>
+                Canadian inductee in the<br>Hall of Fame of the<br>
+                National Auctioneers<br>Association of the United<br>
+                States.</p>
+        </div>
+        <div class="Y2015">
+            <span class="spanYear textstyle"><b>2015</b></span>
+            <br><br>
+            <span class="spanUnderline"><img src="templates/HR line.png" alt=""></span>
+            <br><br>
+            <p class="historypara textstyle">Lorem ipsum dolor sit<br>amet, consectetur<br>
+                adipiscing elit. Praesent<br>eleifend felis vitae dictum<br>
+                maximus. Donec molestie<br>lobortis ipsum, nec auctor<br>
+                dui rhoncus sed.</p>
+        </div>
+        <div class="Y2022">
+            <span class="spanYear textstyle"><b>2022</b></span>
+            <br><br>
+            <span class="spanUnderline"><img src="templates/HR line.png" alt=""></span>
+            <br><br>
+            <p class="historypara textstyle">Lorem ipsum dolor sit<br>amet, consectetur<br>
+                adipiscing elit. Praesent<br>eleifend felis vitae dictum<br>
+                maximus. Donec molestie<br>lobortis ipsum, nec auctor<br>
+                dui rhoncus sed.</p>
+        </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="bg">
+        <div class="contactpara">
+            <p>We extend the life of things<br> for new generations to love</p>
+        </div>
+        <p class="fstyle"><br><br>Contact:<br><br><a href=mailto:“needhelp@company.com”>needhelp@company.com</a><br>234-234-2323<br>88 Broklyn Golden Street. New York</p>
+    </div>
+    </section>
+    <footer class="foot">
+        <div class="handles">
+            <div class="flogo">
+                <a href="https://www.instagram.com/accounts/login/"><img src="templates/Icon_Instagram.png" alt="instagram"
+                        class="handler"></a>
+                <a
+                    href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><img
+                        src="templates/Icon_Twitter.png" alt="twitter" class="handler"></a>
+                <a href="https://www.youtube.com/"><img src="templates/Icon_Youtube.png" alt="youtube" class="handler"></a>
+                <a href="https://www.fb.com/"><img src="templates/Icon_Facebook.png" alt="facebook" class="handler"></a>
+            </div>
+        </div>
+        <p class="footertext">
+            You are receiving this email because you have visited our site or asked us about the regular<br>
+newsletter. Make sure our messages get to your Inbox (and not your bulk or junk folders).
+        </p>
+        <div class="footertext pu-span">
+            <span><a href="https://viewstripo.email/">Privacy police </a></span>
+            <span><a href=""> | Unsubscribe</a></span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </footer>
+</body>
+</html>
